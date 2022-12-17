@@ -1,1 +1,19 @@
+@import './scss/base/typography';
+@import './scss/utils/variables';
 @import './scss/bootstrap/custom';
+
+
+
+
+//Global styles
+
+.nav--form{
+    .nav--input{
+        padding-right: 2.5rem;
+    }
+    .search-img{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+}
