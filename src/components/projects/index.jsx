@@ -13,7 +13,7 @@ const Projects = () => {
   ];
 
 return (
-    <Container className='my-10 overflow-hidden'>
+    <Container className='my-6 overflow-hidden'>
         <h1 className='text-center mb-5'>
         پروژه های موفق ما   
         </h1>

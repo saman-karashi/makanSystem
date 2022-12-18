@@ -61,6 +61,72 @@ background-color: rgba(0, 0, 0,0.5);
 height: 100%;
 }
 
+//Swiper
+.swiper {
+    width:100%;
+    height:70vmin;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    background:url('./assets/imgs/office.png')no-repeat center center/cover;
+
+    &::after{
+        position: absolute;
+        width: 100%;
+        content:'';
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0,0.3);
+    }
+  }
+
+  .carousel--wrapper{
+    position: relative;
+    z-index: 1;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    border-radius: 50%;
+    padding: 1.5rem !important;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    content: '' !important;
+  }
+
+  .swiper-button-next{
+    background: url('./assets/icons/left.png')no-repeat center center , $primary !important;
+    background-size: 30px;
+  }
+
+  .swiper-button-prev{
+    background: url('./assets/icons/right.png')no-repeat center center , $primary !important;
+    background-size: 30px;
+  }
+
+  .swiper-pagination{
+    .swiper-pagination-bullet{
+        background-color: $gray-100 !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: $primary !important;
+        width: 15px;
+        height: 15px;
+    }
+  }
 
 //Breakponits
 
@@ -78,6 +144,11 @@ height: 100%;
         height:38em;
     }
 
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none !important;
+    }
+
 }
 
 
@@ -90,4 +161,29 @@ height: 100%;
         height: 30em;
     }
 
+    .carousel--wrapper{
+        .carousel-text{
+            margin: 0 auto;
+            width: 100% !important;
+        }
+    }
+
+    .swiper {
+        height:30em;
+        .swiper-slide{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+}
+
+
+@include breakpointHandler('xl'){
+    .carousel--wrapper{
+        .carousel-text{
+            width: 75% !important;
+        }
+    }
 }

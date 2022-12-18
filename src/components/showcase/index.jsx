@@ -32,7 +32,7 @@ const Showcase = () => {
                 <span style={{width:"37px",height:'37px'}} className="align-items-center d-sm-flex d-none justify-content-center bg-white rounded-circle">
                  <Image src={play} width="10px" height="12px" />
                 </span>
-                <Button variant="btn" as="a" className="text-white me-2">اطلاعات بیشتر</Button>
+                <Button as="a" variant="primary" className="me-3">اطلاعات بیشتر</Button>
               </div>
             </div>
         </Container>
