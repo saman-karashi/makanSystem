@@ -18,7 +18,7 @@ const Carousels = () => {
     className="mySwiper"
   >
     <SwiperSlide>
-            <div className='carousel--wrapper text-white text-lg-end text-center p-sm-10 p-2'>
+            <div className='carousel--wrapper text-white text-lg-end text-center p-sm-7 p-2'>
                 <h1 className='mb-4 display-3 carousel-title'>
                     عنوان
                 </h1>

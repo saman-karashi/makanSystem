@@ -64,7 +64,7 @@ height: 100%;
 //Swiper
 .swiper {
     width:100%;
-    height:70vmin;
+    height:80vmin;
   }
   
   .swiper-slide {
@@ -178,7 +178,6 @@ height: 100%;
     }
 
 }
-
 
 @include breakpointHandler('xl'){
     .carousel--wrapper{
