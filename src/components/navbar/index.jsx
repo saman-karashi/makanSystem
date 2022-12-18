@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Navbar,Nav,Form, Image} from 'react-bootstrap';
-
+import logo from '../../assets/logo/logo.png';
+import search from '../../assets/icons/search.png'
 
 const Menu = () => {
   return (
-    <Navbar bg="light" expand="md">
+    <Navbar bg="light" expand="lg" className='fixed-top'>
         <Container className='py-lg-4'>
             <Navbar.Brand className='ms-4'>
-                <Image src='/assets/logo/logo.png'/>
+                <Image src={logo}/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -28,7 +29,7 @@ const Menu = () => {
                 className='nav--input'
                 placeholder="جستجو"
               />
-             <Image src='/assets/icons/search.png' className='search-img' width={"24px"} height={"24px"}/>
+             <Image src={search} className='search-img' width={"24px"} height={"24px"}/>
           </Form>
         </Navbar.Collapse>
         </Container>

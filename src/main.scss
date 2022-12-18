@@ -1,19 +1,58 @@
 @import './scss/base/typography';
 @import './scss/utils/variables';
 @import './scss/bootstrap/custom';
-
-
+@import './scss/utils/mixins';
+@import './scss/utils/functions';
 
 
 //Global styles
+body::before{
+    display: block;
+    height:80px;
+    content: '';
+}
 
+//Navbar
 .nav--form{
     .nav--input{
         padding-right: 2.5rem;
     }
     .search-img{
         position: absolute;
-        top: 5px;
+        top: 6px;
         right: 10px;
+    }
+}
+
+//Showcase
+.showcase--wrapper{
+    height: 80vmin;
+    background: url('./assets/imgs/showcase-bg.png'),
+                url('./assets/imgs/overlay_rect_1.png'),
+                url('./assets/imgs/overlay_rect_2.png');
+    background-repeat: no-repeat;
+    background-position: 0 0 , 45em 33em , 25em 18em;
+}
+
+.showcase--text{
+    width: 50%;
+}
+//Breakponits
+
+@include breakpointHandler('sm'){
+    html,
+    body{
+        font-size: 14px;
+    }
+    .showcase--wrapper{
+        height:30em;
+    }
+
+}
+
+
+@include breakpointHandler('lg'){
+    .showcase--text{
+        width: 100%;
     }
 }

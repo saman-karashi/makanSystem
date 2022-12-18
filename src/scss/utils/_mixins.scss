@@ -1,0 +1,9 @@
+
+//Breakpoint Handler
+@mixin breakpointHandler($breakpoint){
+    @if map-has-key($breakpoints , $breakpoint ){
+        @media screen and (max-width:get-breakpoint($breakpoint)){
+            @content;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 $theme-colors: (
 warning:$warning,
 primary:$primary,
-light:$white
+light:$white,
+info:$info
 );
 
 
@@ -15,8 +16,13 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 4,
   7: $spacer * 5,
-  8: $spacer * 6
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+  11: $spacer * 9
 );
+
+$headings-font-family:'shabnam bold';
 $navbar-light-color:$dark;
 $navbar-light-hover-color:$primary;
 $link-decoration:none;

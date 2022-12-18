@@ -1,9 +1,11 @@
-import { Button } from 'react-bootstrap';
+import Showcase from "./components/showcase";
+
 
 function App() {
   return (
     <>
       {/* Showcase */}
+      <Showcase />
     </>
   );
 }
