@@ -5,15 +5,15 @@ import search from '../../assets/icons/search.png'
 
 const Menu = () => {
   return (
-    <Navbar bg="light" expand="lg" className='fixed-top'>
-        <Container className='py-lg-4'>
-            <Navbar.Brand className='ms-4'>
+    <Navbar bg="light" expand="lg" className='shadow-sm fixed-top'>
+        <Container className='py-lg-3'>
+            <Navbar.Brand className='ms-4 me-0'>
                 <Image src={logo}/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
           <Nav
-            className='ms-auto'
+            style={{marginLeft:"auto"}}
             navbarScroll
           >
             <Nav.Link className='mx-lg-2 mt-2 mt-lg-0' href="#products">محصولات</Nav.Link>

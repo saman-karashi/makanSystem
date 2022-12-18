@@ -28,7 +28,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
+  --bs-gray-100: #F4F4F4;
   --bs-gray-200: #CBCBCB;
   --bs-gray-300: #747474;
   --bs-gray-400: #ced4da;
@@ -41,10 +41,12 @@
   --bs-primary: #6B54A8;
   --bs-light: #fff;
   --bs-info: rgba(68, 49, 120, 0.368627451);
+  --bs-gray-100: #F4F4F4;
   --bs-warning-rgb: 246, 176, 78;
   --bs-primary-rgb: 107, 84, 168;
   --bs-light-rgb: 255, 255, 255;
   --bs-info-rgb: 68, 49, 120;
+  --bs-gray-100-rgb: 244, 244, 244;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -2200,13 +2202,13 @@ progress {
 
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: #f8f9fa;
-  --bs-table-border-color: #dfe0e1;
-  --bs-table-striped-bg: #ecedee;
+  --bs-table-bg: #F4F4F4;
+  --bs-table-border-color: gainsboro;
+  --bs-table-striped-bg: #e8e8e8;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-bg: gainsboro;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-bg: #e2e2e2;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3263,6 +3265,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: rgba(68, 49, 120, 0.368627451);
 }
 
+.btn-gray-100 {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #F4F4F4;
+  --bs-btn-border-color: #F4F4F4;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f6f6f6;
+  --bs-btn-hover-border-color: whitesmoke;
+  --bs-btn-focus-shadow-rgb: 207, 207, 207;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f6f6f6;
+  --bs-btn-active-border-color: whitesmoke;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #F4F4F4;
+  --bs-btn-disabled-border-color: #F4F4F4;
+}
+
 .btn-outline-warning {
   --bs-btn-color: #F6B04E;
   --bs-btn-border-color: #F6B04E;
@@ -3328,6 +3347,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: rgba(68, 49, 120, 0.368627451);
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: rgba(68, 49, 120, 0.368627451);
+  --bs-gradient: none;
+}
+
+.btn-outline-gray-100 {
+  --bs-btn-color: #F4F4F4;
+  --bs-btn-border-color: #F4F4F4;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #F4F4F4;
+  --bs-btn-hover-border-color: #F4F4F4;
+  --bs-btn-focus-shadow-rgb: 244, 244, 244;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #F4F4F4;
+  --bs-btn-active-border-color: #F4F4F4;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #F4F4F4;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #F4F4F4;
   --bs-gradient: none;
 }
 
@@ -4903,6 +4939,15 @@ textarea.form-control-lg {
   color: rgba(11, 8, 19, 0.6969411765);
 }
 
+.alert-gray-100 {
+  --bs-alert-color: #626262;
+  --bs-alert-bg: #fdfdfd;
+  --bs-alert-border-color: #fcfcfc;
+}
+.alert-gray-100 .alert-link {
+  color: #4e4e4e;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -4974,7 +5019,7 @@ textarea.form-control-lg {
   --bs-list-group-item-padding-y: 0.5rem;
   --bs-list-group-action-color: #495057;
   --bs-list-group-action-hover-color: #495057;
-  --bs-list-group-action-hover-bg: #f8f9fa;
+  --bs-list-group-action-hover-bg: #F4F4F4;
   --bs-list-group-action-active-color: #212529;
   --bs-list-group-action-active-bg: #CBCBCB;
   --bs-list-group-disabled-color: #6c757d;
@@ -5256,6 +5301,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: rgba(17, 12, 30, 0.6211764706);
   border-color: rgba(17, 12, 30, 0.6211764706);
+}
+
+.list-group-item-gray-100 {
+  color: #626262;
+  background-color: #fdfdfd;
+}
+.list-group-item-gray-100.list-group-item-action:hover, .list-group-item-gray-100.list-group-item-action:focus {
+  color: #626262;
+  background-color: #e4e4e4;
+}
+.list-group-item-gray-100.list-group-item-action.active {
+  color: #fff;
+  background-color: #626262;
+  border-color: #626262;
 }
 
 .btn-close {
@@ -6835,6 +6894,11 @@ textarea.form-control-lg {
   background-color: RGBA(68, 49, 120, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-gray-100 {
+  color: #000 !important;
+  background-color: RGBA(244, 244, 244, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-warning {
   color: #F6B04E !important;
 }
@@ -6861,6 +6925,13 @@ textarea.form-control-lg {
 }
 .link-info:hover, .link-info:focus {
   color: rgba(32, 23, 57, 0.4949019608) !important;
+}
+
+.link-gray-100 {
+  color: #F4F4F4 !important;
+}
+.link-gray-100:hover, .link-gray-100:focus {
+  color: #f6f6f6 !important;
 }
 
 .ratio {
@@ -7315,6 +7386,11 @@ textarea.form-control-lg {
 .border-info {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-info-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-gray-100 {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-gray-100-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8543,6 +8619,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-gray-100 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-gray-100-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8612,6 +8693,11 @@ textarea.form-control-lg {
 .bg-info {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-gray-100 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-gray-100-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -12748,7 +12834,7 @@ textarea.form-control-lg {
 }
 body::before {
   display: block;
-  height: 80px;
+  height: 70px;
   content: "";
 }
 
@@ -12772,17 +12858,43 @@ body::before {
   width: 50%;
 }
 
+.projects--vertical-card {
+  background: url("./assets/imgs/vertical_mobile.png") no-repeat center center/cover;
+  position: relative;
+}
+
+.projects--vertical-card > * {
+  position: relative;
+  z-index: 5;
+}
+
+.projects--vertical-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
 @media screen and (max-width: 480px) {
   html,
 body {
     font-size: 14px;
   }
+}
+@media screen and (max-width: 768px) {
   .showcase--wrapper {
-    height: 30em;
+    height: 38em;
   }
 }
 @media screen and (max-width: 992px) {
   .showcase--text {
     width: 100%;
+  }
+  .projects--vertical-card {
+    height: 30em;
   }
 }

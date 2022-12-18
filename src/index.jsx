@@ -3,15 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Layout from './layout';
+import Layout from './components/layout';
+import { ThemeProvider } from 'react-bootstrap';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Layout>
-          <App />
-      </Layout>
+    <ThemeProvider dir='rtl'>
+        <Layout>
+            <App />
+        </Layout>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

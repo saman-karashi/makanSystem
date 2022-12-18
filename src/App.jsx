@@ -1,3 +1,4 @@
+import Projects from "./components/projects";
 import Showcase from "./components/showcase";
 
 
@@ -6,6 +7,8 @@ function App() {
     <>
       {/* Showcase */}
       <Showcase />
+      {/* Projects */}
+      <Projects />
     </>
   );
 }

@@ -8,7 +8,7 @@
 //Global styles
 body::before{
     display: block;
-    height:80px;
+    height:70px;
     content: '';
 }
 
@@ -37,6 +37,31 @@ body::before{
 .showcase--text{
     width: 50%;
 }
+
+//Projects
+.projects--vertical-card{
+    background: url('./assets/imgs/vertical_mobile.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.projects--vertical-card > *{
+    position: relative;
+    z-index: 5;
+}
+
+
+.projects--vertical-card::after{
+content: '';
+position:absolute;
+width: 100%;
+border-radius: 8px;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0,0.5);
+height: 100%;
+}
+
+
 //Breakponits
 
 @include breakpointHandler('sm'){
@@ -44,8 +69,13 @@ body::before{
     body{
         font-size: 14px;
     }
+
+}
+
+
+@include breakpointHandler('md'){
     .showcase--wrapper{
-        height:30em;
+        height:38em;
     }
 
 }
@@ -55,4 +85,9 @@ body::before{
     .showcase--text{
         width: 100%;
     }
+
+    .projects--vertical-card{
+        height: 30em;
+    }
+
 }
