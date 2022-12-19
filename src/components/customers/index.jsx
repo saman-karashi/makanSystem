@@ -13,9 +13,9 @@ const Customers = () => {
 //const [swipe,setSwipe] = useState(null);
 
   return (
-    <div className=' customers--wrapper'>
+    <div className=' customers--wrapper mb-6'>
         <Container md="fluid" className='text-center py-1'>
-            <h1 className='h2 lh-lg mt-11'>
+            <h1 className='h2 lh-lg mt-lg-11 mt-8'>
                 مورد اعتماد هزاران مشتری <br></br>خوشحال
             </h1>
             <p className='lead'>

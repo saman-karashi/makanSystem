@@ -12,6 +12,20 @@ body::before{
     content: '';
 }
 
+ul{
+    list-style: none;
+}
+
+li,
+a{
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover{
+ color: $gray-200;
+}  
+
 //Navbar
 .nav--form{
     .nav--input{
@@ -132,13 +146,17 @@ height: 100%;
   //Customers
   .customers--wrapper{
     background: url('./assets/imgs/customers-bg.png') no-repeat 55% 0;
-    background-size: 50%;
-    min-height: 100vmin;
+    background-size: 40%;
+    height: 50em;
     .swiper-slide{
         .customers--card{
             border: 1px solid $gray-50 !important;
             background-color: rgba(255, 255, 255,0.25);
         }
+    }
+
+    .swiper{
+        height: 100%;
     }
   }
 
@@ -156,11 +174,16 @@ height: 100%;
             right:-15%;
             top:30%;
         }
-
-        
     }
   }
 
+
+  //Map
+  .google-map {
+    width:100%;
+    height: 20em;
+  }
+  
 //Breakponits
 
 @include breakpointHandler('sm'){
@@ -209,11 +232,6 @@ height: 100%;
             justify-content: center;
         }
     }
-
-    .customers--wrapper{
-        background-size: 100%;
-        background-position: 55% 25%;
-    }
 }
 
 @include breakpointHandler('xl'){
@@ -221,6 +239,11 @@ height: 100%;
         .carousel-text{
             width: 75% !important;
         }
+    }
+
+    .customers--wrapper{
+        background-size: 80%;
+        background-position: 60% 0;
     }
 }
 
@@ -236,8 +259,6 @@ height: 100%;
                 right:-12%;
                 top:25%;
             }
-    
-            
         }
       }
 }

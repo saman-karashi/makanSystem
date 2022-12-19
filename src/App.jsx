@@ -5,7 +5,6 @@ import Projects from "./components/projects";
 import Showcase from "./components/showcase";
 import Order from "./components/order";
 
-
 function App() {
   return (
     <>

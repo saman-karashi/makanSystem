@@ -6,14 +6,14 @@ import telephone from '../../assets/icons/telephone.png'
 
 const Attributes = () => {
   return (
-    <Container className='my-6 text-center'>
+    <Container className='my-lg-6 mt-6 text-center'>
         <h1 className='mb-lg-8 mb-5'>
             ویژگی های ما
         </h1>
         <Row>
             <Col lg={4} md={6}>
                 <Card style={{height:"20em"}} className="my-lg-0 my-5 rounded-5 bg-blue-400 border-0 px-5 text-center">
-                    <div className='bg-purple-600 rounded-circle d-flex align-items-center justify-content-center mx-auto' style={{marginTop:"-3em",width:"90px",height:"85px"}}>
+                    <div className='bg-purple-600 rounded-circle d-flex align-items-center justify-content-center mx-auto' style={{marginTop:"-3em",width:"80px",height:"80px"}}>
                         <Image src={checked} />
                     </div>
                         <Card.Body>
@@ -28,8 +28,8 @@ const Attributes = () => {
             </Col>
             <Col lg={4} md={6}>
                 <Card style={{height:"20em"}} className="my-lg-0 my-5 rounded-5 bg-orange-400 border-0 px-5 text-center">
-                    <div className='bg-orange-600 rounded-circle d-flex align-items-center justify-content-center mx-auto' style={{marginTop:"-3em",width:"90px",height:"85px"}}>
-                        <Image src={percentage}/>
+                    <div className='bg-orange-600 rounded-circle d-flex align-items-center justify-content-center mx-auto' style={{marginTop:"-3em",width:"80px",height:"80px"}}>
+                        <Image src={percentage} />
                     </div>
                         <Card.Body>
                             <Card.Title className="my-4">
@@ -43,7 +43,7 @@ const Attributes = () => {
             </Col>
             <Col lg={4} md={6} className="mx-md-auto" >
                 <Card style={{height:"20em"}} className="my-lg-0 my-5 rounded-5 bg-purple-400 border-0 px-5 text-center">
-                    <div className='bg-blue-600 rounded-circle d-flex align-items-center justify-content-center mx-auto' style={{marginTop:"-3em",width:"90px",height:"85px"}}>
+                    <div className='bg-blue-600 rounded-circle d-flex align-items-center justify-content-center mx-auto' style={{marginTop:"-3em",width:"80px",height:"80px"}}>
                         <Image src={telephone} />
                     </div>
                         <Card.Body>
