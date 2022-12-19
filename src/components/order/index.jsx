@@ -16,7 +16,7 @@ const Order = () => {
                 <h1>
                 برای ثبت اولین پروژه تان کلیک کنید.
                 </h1>
-                <Button variant='orange-600' className='mb-lg-0 mt-lg-7 mt-5 px-lg-6 px-5 fs-5 text-white py-3 rounded-4'>
+                <Button as="button" className='order-btn mb-lg-0 mt-lg-7 mt-5 px-lg-6 px-5 fs-5 text-white py-3 rounded-4'>
                     ثبت سفارش
                 </Button>
             </Col>

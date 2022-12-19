@@ -13378,7 +13378,7 @@ a:hover {
 }
 
 .showcase--wrapper {
-  height: 80vmin;
+  height: 40em;
   background: url("./assets/imgs/showcase-bg.png"), url("./assets/imgs/overlay_rect_1.png"), url("./assets/imgs/overlay_rect_2.png");
   background-repeat: no-repeat;
   background-position: 0 0, 45em 33em, 25em 18em;
@@ -13491,6 +13491,14 @@ a:hover {
   right: -15%;
   top: 30%;
 }
+.order--wrapper .order-btn {
+  background: linear-gradient(270deg, #F78B4D 4.62%, #E26C00 100%);
+  border: 0;
+  transition: all 250ms ease-in-out;
+}
+.order--wrapper .order-btn:hover {
+  filter: opacity(0.7);
+}
 
 .google-map {
   width: 100%;
@@ -13504,9 +13512,6 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .showcase--wrapper {
-    height: 38em;
-  }
   .swiper-button-next,
 .swiper-button-prev {
     display: none !important;

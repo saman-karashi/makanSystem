@@ -40,7 +40,7 @@ a:hover{
 
 //Showcase
 .showcase--wrapper{
-    height: 80vmin;
+    height: 40em;
     background: url('./assets/imgs/showcase-bg.png'),
                 url('./assets/imgs/overlay_rect_1.png'),
                 url('./assets/imgs/overlay_rect_2.png');
@@ -175,7 +175,18 @@ height: 100%;
             top:30%;
         }
     }
+
+    .order-btn{
+        background: linear-gradient(270deg,$orange-600 4.62%,$orange-800 100%);
+        border:0;
+        transition: all 250ms ease-in-out;
+
+         &:hover{
+            filter: opacity(0.7);
+         }
+    }
   }
+
 
 
   //Map
@@ -196,10 +207,6 @@ height: 100%;
 
 
 @include breakpointHandler('md'){
-    .showcase--wrapper{
-        height:38em;
-    }
-
     .swiper-button-next,
     .swiper-button-prev{
         display: none !important;

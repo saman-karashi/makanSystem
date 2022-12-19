@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </Col>
 
-            <Col className="mt-lg-0 mt-lg-5 mt-3" lg={2} md={12}>
+            <Col className="mt-lg-0 mt-3" lg={2} md={12}>
                 <h6>میانبر</h6>
                 <div className='border-bottom border-white w-50'></div>
                 <ul className='p-0'>
@@ -57,7 +57,7 @@ const Footer = () => {
 
             </Col>
 
-            <Col className="mt-lg-0 mt-lg-5 mt-3" lg={2} md={12}>
+            <Col className="mt-lg-0 mt-3" lg={2} md={12}>
                 <h6>میانبر</h6>
                 <div className='border-bottom border-white w-50'></div>
                 <ul className='p-0'>
