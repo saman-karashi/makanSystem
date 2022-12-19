@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "./static/css/main.9603d1ea.css",
-    "main.js": "./static/js/main.305e3db3.js",
+    "main.css": "./static/css/main.433de692.css",
+    "main.js": "./static/js/main.64ddc138.js",
     "static/js/787.3c15fadf.chunk.js": "./static/js/787.3c15fadf.chunk.js",
+    "static/media/office.png": "./static/media/office.fb5c0e2b52ea89a01681.png",
+    "static/media/vertical_mobile.png": "./static/media/vertical_mobile.ff9dd019ddb2ee0877e1.png",
     "static/media/showcase-bg.png": "./static/media/showcase-bg.fbe517e3e701b0603bdf.png",
+    "static/media/card-4.png": "./static/media/card-4.d50cb3c72286fdd05ed8.png",
+    "static/media/card-3.png": "./static/media/card-3.6a089baefe711e4684d3.png",
+    "static/media/card-1.png": "./static/media/card-1.9e6466f7b423c98c8b05.png",
     "static/media/Shabnam-Bold.woff": "./static/media/Shabnam-Bold.9c6b4c407c34e086a7e5.woff",
     "static/media/Shabnam.woff": "./static/media/Shabnam.72c246af45e0b9e89ad2.woff",
     "static/media/Shabnam-Bold.woff2": "./static/media/Shabnam-Bold.009046a90c1d8b212329.woff2",
+    "static/media/card-2.png": "./static/media/card-2.47f2f24ab2b279ba87eb.png",
     "static/media/Shabnam.woff2": "./static/media/Shabnam.fd76903f885c2265d409.woff2",
     "index.html": "./index.html",
-    "main.9603d1ea.css.map": "./static/css/main.9603d1ea.css.map",
-    "main.305e3db3.js.map": "./static/js/main.305e3db3.js.map",
+    "main.433de692.css.map": "./static/css/main.433de692.css.map",
+    "main.64ddc138.js.map": "./static/js/main.64ddc138.js.map",
     "787.3c15fadf.chunk.js.map": "./static/js/787.3c15fadf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9603d1ea.css",
-    "static/js/main.305e3db3.js"
+    "static/css/main.433de692.css",
+    "static/js/main.64ddc138.js"
   ]
 }
