@@ -143,6 +143,24 @@ height: 100%;
   }
 
 
+  //Order
+  .order--wrapper{
+    background-color: rgba($primary,0.35);
+    .order-bg-wrapper{
+        .order-bulb{
+            right:-15%;
+            top:15%;
+        }
+
+        .order-curvyArrow{
+            right:-15%;
+            top:30%;
+        }
+
+        
+    }
+  }
+
 //Breakponits
 
 @include breakpointHandler('sm'){
@@ -196,7 +214,6 @@ height: 100%;
         background-size: 100%;
         background-position: 55% 25%;
     }
-
 }
 
 @include breakpointHandler('xl'){
@@ -205,4 +222,22 @@ height: 100%;
             width: 75% !important;
         }
     }
+}
+
+@include breakpointHandler('xxl'){
+    .order--wrapper{
+        .order-bg-wrapper{
+            .order-bulb{
+                right:-12%;
+                top:10%;
+            }
+    
+            .order-curvyArrow{
+                right:-12%;
+                top:25%;
+            }
+    
+            
+        }
+      }
 }

@@ -3,6 +3,7 @@ import Carousels from "./components/carousel";
 import Customers from "./components/customers";
 import Projects from "./components/projects";
 import Showcase from "./components/showcase";
+import Order from "./components/order";
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Attributes />
       {/* Customers */}
       <Customers />
+      {/* Order */}
+      <Order />
     </>
   );
 }

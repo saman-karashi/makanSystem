@@ -673,12 +673,12 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1320px;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1440px;
   }
 }
 .row {
@@ -13463,6 +13463,18 @@ body::before {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
+.order--wrapper {
+  background-color: rgba(107, 84, 168, 0.35);
+}
+.order--wrapper .order-bg-wrapper .order-bulb {
+  right: -15%;
+  top: 15%;
+}
+.order--wrapper .order-bg-wrapper .order-curvyArrow {
+  right: -15%;
+  top: 30%;
+}
+
 @media screen and (max-width: 480px) {
   html,
 body {
@@ -13505,5 +13517,15 @@ body {
 @media screen and (max-width: 1200px) {
   .carousel--wrapper .carousel-text {
     width: 75% !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .order--wrapper .order-bg-wrapper .order-bulb {
+    right: -12%;
+    top: 10%;
+  }
+  .order--wrapper .order-bg-wrapper .order-curvyArrow {
+    right: -12%;
+    top: 25%;
   }
 }
