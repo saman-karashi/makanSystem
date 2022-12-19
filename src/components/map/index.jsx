@@ -22,7 +22,7 @@ const LocationPin = ({ text }) => (
 const Map = () => (
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_GOOGLE_API_KEY }}
+        bootstrapURLKeys={{libraries:'places', key: process.env.REACT_GOOGLE_API_KEY }}
         defaultCenter={location}
         defaultZoom={17}
       >
