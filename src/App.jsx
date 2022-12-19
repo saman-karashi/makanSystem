@@ -1,5 +1,6 @@
 import Attributes from "./components/attributes";
 import Carousels from "./components/carousel";
+import Customers from "./components/customers";
 import Projects from "./components/projects";
 import Showcase from "./components/showcase";
 
@@ -15,6 +16,8 @@ function App() {
       <Carousels />
       {/* Attributes */}
       <Attributes />
+      {/* Customers */}
+      <Customers />
     </>
   );
 }

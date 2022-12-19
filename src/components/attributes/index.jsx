@@ -6,7 +6,10 @@ import telephone from '../../assets/icons/telephone.png'
 
 const Attributes = () => {
   return (
-    <Container className='my-8'>
+    <Container className='my-6 text-center'>
+        <h1 className='mb-lg-8 mb-5'>
+            ویژگی های ما
+        </h1>
         <Row>
             <Col lg={4} md={6}>
                 <Card style={{height:"20em"}} className="my-lg-0 my-5 rounded-5 bg-blue-400 border-0 px-5 text-center">

@@ -3,7 +3,7 @@ import play from '../../assets/icons/play.png';
 
 const Showcase = () => {
   return (
-    <section className="bg-primary showcase--wrapper">
+    <div className="bg-primary showcase--wrapper">
         <Container className="h-100 d-flex flex-column justify-content-center align-items-start">
             <div className="d-md-block d-none mt-lg-0  bg-info rounded-5 text-start bg-info text-white py-3 pe-2 ps-5">
               <small style={{padding:"13px 10px"}} className="bg-primary rounded-circle">
@@ -36,7 +36,7 @@ const Showcase = () => {
               </div>
             </div>
         </Container>
-    </section>
+    </div>
   )
 }
 
