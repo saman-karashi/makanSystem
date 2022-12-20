@@ -2,7 +2,7 @@ import {useState} from 'react';
 import CustomersCard from '../cards/customers';
 import {Swiper,SwiperSlide} from 'swiper/react';
 import { Navigation, Pagination} from "swiper";
-import { Container,Image,Card,ButtonGroup,ToggleButton,Button } from 'react-bootstrap';
+import { Container,Image,Card } from 'react-bootstrap';
 import firstCustomer from '../../assets/imgs/customer-1.png';
 import secondCustomer from '../../assets/imgs/customer-2.png';
 import thirdCustomer from '../../assets/imgs/customer-3.png';
@@ -10,7 +10,25 @@ import goldStar from '../../assets/icons/gold-star.png';
 import {ArrowLeft,ArrowRight} from 'react-bootstrap-icons'; 
 
 const Customers = () => {
-//const [swipe,setSwipe] = useState(null);
+const [swipe,setSwipe] = useState(null);
+const [isActive,setIsActive] = useState(0);
+
+const buttons = [
+    {icon:<ArrowRight />,type:'prev',id:0},
+    {icon:<ArrowLeft />,type:'next',id:1}
+];
+
+
+const btnHandler = (e,type,id)=>{
+    setIsActive(id)
+    if(type == 'next'){
+        //Perform next slider handler
+        swipe.slideNext();
+    }else{
+        //Perform prev slider handler
+        swipe.slidePrev()
+    }
+} 
 
   return (
     <div className=' customers--wrapper mb-6'>
@@ -31,7 +49,7 @@ const Customers = () => {
                 observer
                 observeParents
                 className="mySwiper mt-lg-5"
-                //onBeforeInit={(swiper)=> setSwipe(swiper) }
+                onBeforeInit={(swiper)=> setSwipe(swiper) }
                 breakpoints={{
                     1200:{
                         slidesPerView:3,
@@ -129,6 +147,17 @@ const Customers = () => {
                     </SwiperSlide>
                     
             </Swiper>
+            <div className="customers--arrows">
+                {
+                    buttons.map((btn,idx)=>{
+                        return(
+                            <button className={`rounded-circle btn fs-3 mx-3 ${isActive === btn.id ? 'btn-outline-primary' : 'btn-primary'}`} onClick={(e) => btnHandler(e,btn.type,btn.id)}  key={idx}>
+                                {btn.icon}
+                            </button>
+                        )
+                    })
+                }
+            </div>
         </Container>
     </div>
   )

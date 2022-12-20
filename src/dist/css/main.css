@@ -13409,12 +13409,15 @@ a:hover {
   height: 100%;
 }
 
-.carousel--wrapper .swiper-slide {
+.carousel--wrapper .swiper {
+  height: 40em;
+}
+.carousel--wrapper .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: url("./assets/imgs/office.png") no-repeat center center/cover;
 }
-.carousel--wrapper .swiper-slide::after {
+.carousel--wrapper .swiper .swiper-slide::after {
   position: absolute;
   width: 100%;
   content: "";
@@ -13423,7 +13426,7 @@ a:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.carousel--wrapper .swiper-slide .carousel-body {
+.carousel--wrapper .swiper .swiper-slide .carousel-body {
   z-index: 1;
   position: relative;
 }
@@ -13467,17 +13470,44 @@ a:hover {
   height: 15px;
 }
 
-.customers--wrapper {
+.customers--wrapper .container {
+  position: relative;
   background: url("./assets/imgs/customers-bg.png") no-repeat 55% 0;
-  background-size: 40%;
+  background-size: 80vmin;
   height: 50em;
 }
-.customers--wrapper .swiper-slide .customers--card {
+.customers--wrapper .container .swiper-slide .customers--card {
   border: 1px solid #DDDDDD !important;
   background-color: rgba(255, 255, 255, 0.25);
 }
-.customers--wrapper .swiper {
-  height: 100%;
+.customers--wrapper .container .swiper {
+  position: static;
+}
+.customers--wrapper .container .swiper .swiper-pagination {
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+.customers--wrapper .container .swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #6B54A8 !important;
+  opacity: 1 !important;
+  transition: width 0.5s linear;
+  display: inline-block;
+  border-radius: 50px !important;
+}
+.customers--wrapper .container .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 30px;
+}
+.customers--wrapper .container .swiper .swiper-button-prev,
+.customers--wrapper .container .swiper .swiper-button-next {
+  display: none;
+}
+.customers--wrapper .container .customers--arrows {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 .order--wrapper {
@@ -13510,11 +13540,20 @@ a:hover {
 body {
     font-size: 14px;
   }
+  .footer .footer-desc {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .swiper-button-next,
 .swiper-button-prev {
     display: none !important;
+  }
+  .customers--wrapper .container .swiper .swiper-pagination {
+    text-align: center;
+  }
+  .customers--wrapper .container .customers--arrows {
+    display: none;
   }
 }
 @media screen and (max-width: 992px) {
@@ -13535,6 +13574,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .footer .footer-desc {
+    width: 75%;
   }
 }
 @media screen and (max-width: 1200px) {

@@ -9,15 +9,15 @@ import Map from '../map';
 
 const Footer = () => {
   return (
-    <div className='bg-primary p-lg-7 py-5 text-white'>
-        <Container>
+    <div className='footer bg-primary p-lg-7 py-5 text-white'>
+        <Container fluid>
         <Row>
             <Col lg={3} md={12}>
                 <h6>
                     <span className='align-bottom'>Makan System</span>
                     <Image src={footerLogo} className="me-2" />
                 </h6>
-                <p className='my-3'>
+                <p className='my-3 footer-desc'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                 </p>
                 <div >
