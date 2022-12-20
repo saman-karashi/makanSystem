@@ -1,39 +1,18 @@
-import React from 'react';
-import GoogleMapReact from 'google-map-react';
-import {GeoAlt} from 'react-bootstrap-icons'
+import { MapContainer, TileLayer,Marker } from 'react-leaflet';
 
-const location = {
-address: '1600 Amphitheatre Parkway, Mountain View, california.',
-lat: 37.42216,
-lng: -122.08427,
+const position = [35.7219,51.3347]
+
+const Map = () => {
+return (
+  <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Marker position={position}>
+    </Marker>
+  </MapContainer>
+)
 }
-
-
-const LocationPin = ({ text }) => (
-    <div className="d-flex align-items-center" style={{width:"180px"}}>
-        <span className='fs-1 pin-icon'>
-            <GeoAlt />
-        </span>
-      <p className="pin-text">{text}</p>
-    </div>
-);
-
-
-const Map = () => (
-    <div className="google-map">
-      <GoogleMapReact
-        bootstrapURLKeys={{libraries:'places', key: process.env.REACT_GOOGLE_API_KEY }}
-        defaultCenter={location}
-        defaultZoom={17}
-      >
-        <LocationPin
-          lat={location.lat}
-          lng={location.lng}
-          text={location.address}
-        />
-      </GoogleMapReact>
-    </div>
-);
-
 
 export default Map

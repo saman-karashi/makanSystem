@@ -19,7 +19,7 @@ return (
         </h1>
         {/* Buttons */}
       <div className="mx-auto d-flex justify-content-center">
-        <ButtonGroup>
+        <ButtonGroup style={{whiteSpace:'nowrap'}}>
           
             {radios.map((radio, idx) => (
               <ToggleButton

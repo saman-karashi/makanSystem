@@ -31,12 +31,12 @@ const btnHandler = (e,type,id)=>{
 } 
 
   return (
-    <div className=' customers--wrapper mb-6'>
+    <div className='customers--wrapper mb-6'>
         <Container md="fluid" className='text-center py-1'>
-            <h1 className='h2 lh-lg mt-lg-11 mt-8'>
+            <h1 className='h2 lh-lg mt-md-11 mt-0'>
                 مورد اعتماد هزاران مشتری <br></br>خوشحال
             </h1>
-            <p className='lead'>
+            <p className='lead customers--text'>
             اینها نظرات مشتریان ما هست که هنگام اولین استفاده از محصولات ما با کمال میل
             به ما ملحق شده اند.
             </p>

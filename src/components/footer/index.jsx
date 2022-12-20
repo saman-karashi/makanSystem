@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='footer bg-primary p-lg-7 py-5 text-white'>
         <Container fluid>
         <Row>
-            <Col lg={3} md={12}>
+            <Col lg={4} className="px-lg-4" md={12}>
                 <h6>
                     <span className='align-bottom'>Makan System</span>
                     <Image src={footerLogo} className="me-2" />
@@ -78,11 +78,8 @@ const Footer = () => {
                         </a>
                     </li>
                 </ul>
-
             </Col>
-
-
-            <Col lg={5} md={12}>
+            <Col lg={4} md={12}>
                 <Map />
             </Col>
         </Row>

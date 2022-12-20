@@ -16,6 +16,10 @@ ul{
     list-style: none;
 }
 
+img{
+    object-fit: cover;
+}
+
 li,
 a{
     text-decoration: none;
@@ -58,12 +62,13 @@ a:hover{
     position: relative;
 }
 
+.websites-horizontal-card > *,
 .projects--vertical-card > *{
     position: relative;
     z-index: 5;
 }
 
-
+.websites-horizontal-card::after,
 .projects--vertical-card::after{
 content: '';
 position:absolute;
@@ -102,14 +107,6 @@ height: 100%;
     }
 }
 
-//Swiper
-.swiper {
-    width:100%;
-    height: 80vmin;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .swiper-button-next,
   .swiper-button-prev{
     border-radius: 50%;
@@ -147,11 +144,12 @@ height: 100%;
 
   //Customers
   .customers--wrapper{
+    height:50em;
     .container{
         position: relative;
         background: url('./assets/imgs/customers-bg.png') no-repeat 55% 0;
-        background-size:80vmin;
-        height: 50em;
+        background-size:50%;
+        height: 100%;
         .swiper-slide{
             .customers--card{
                 border: 1px solid $gray-50 !important;
@@ -190,6 +188,11 @@ height: 100%;
             bottom: 0;
             z-index: 10;
         }
+
+        .customers--text{
+            width: 48%;
+            margin: 0 auto;
+        }
     }
   }
 
@@ -221,11 +224,22 @@ height: 100%;
   }
 
 
+//Websites
+.websites-horizontal-card{
+    height: 400px;
+    background: url('./assets/imgs/card-9.jpg') no-repeat center center/cover;
+    position: relative;
 
-  //Map
-  .google-map {
-    width:100%;
-    height: 20em;
+    .websites--text{
+        width: 50%;
+    }
+}
+
+
+//Map
+.leaflet-container {
+    width: 100%;
+    height:400px;
   }
   
 //Breakponits
@@ -243,6 +257,12 @@ height: 100%;
         }
     }
 
+    .carousel--wrapper{
+        .swiper{
+            height: 30em;
+        }
+    }
+
 }
 
 
@@ -253,6 +273,7 @@ height: 100%;
     }
 
     .customers--wrapper{
+        height: 40em;
         .container{
             .swiper{
                   .swiper-pagination{
@@ -286,7 +307,6 @@ height: 100%;
     }
 
     .swiper {
-        height:30em;
         .swiper-slide{
             display: flex;
             flex-direction: column;
@@ -299,6 +319,21 @@ height: 100%;
           width: 75%;
         }
     }
+
+    .customers--wrapper{
+        .container{
+            background-size: 100%;
+            .customers--text{
+                width: 100%;
+            }
+        }
+    }
+
+    .websites-horizontal-card{
+        .websites--text{
+            width: 100%;
+        }
+      }
 }
 
 @include breakpointHandler('xl'){
@@ -309,8 +344,10 @@ height: 100%;
     }
 
     .customers--wrapper{
-        background-size: 80%;
-        background-position: 60% 0;
+        .container{
+            background-size: 70%;
+            background-position: 60% 0;
+        }
     }
 }
 
